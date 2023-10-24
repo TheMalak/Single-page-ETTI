@@ -1,0 +1,369 @@
+@import 'colors'
+
+body
+    margin: 0
+    font-family: 'Poppins', sans-serif
+
+.contact-header
+    padding: 0.7rem 0
+    color: white
+    font-weight: 500
+    background: $blue
+    i
+        font-size: 1.4rem
+        margin-right: 0.5rem
+    a
+        color: white
+        text-decoration: none
+        margin-left: 0.5rem
+    @media (max-width: 621px)
+        .container-contact-header
+            align-items: center
+            justify-content: center
+        a
+            font-size: 0.7rem
+            line-height: 1rem
+
+header
+    padding: 0
+    border-bottom: 1.2px solid #c4c4c4
+    background: white
+    z-index: 99
+    .header-container-elements
+        @media ( max-width: 647px )
+            display: contents
+    nav
+        ul
+            padding: 0
+            li
+                text-transform: uppercase
+                font-weight: 600
+                list-style: none
+                margin-right: 1.2rem
+                a
+                    color: black
+                    text-decoration: none
+                &:last-child
+                    margin-right: 0
+        @media ( max-width: 647px )
+            overflow: auto
+            white-space: nowrap
+            align-items: center
+            display: flex
+
+#introduction
+    .title
+        z-index: 2
+        position: inherit
+        h1
+            font-size: 2rem
+            line-height: 2.5rem
+            @media (max-width: 500px)
+                font-size: 1.5rem
+                line-height: 2rem
+        p
+            font-size: 1.2rem
+            line-height: 1.8rem
+            @media (max-width: 500px)
+                font-size: 1rem
+                line-height: 1.5rem
+    .image
+        @media (max-width: 920px)
+            position: absolute
+            top: 0
+            z-index: 1
+            width: 80%
+            right: -148px
+        @media (max-width: 752px)
+            height: 500px
+            width: 700px
+            right: -300px
+        @media (max-width: 600px)
+            height: 300px
+            width: 700px
+            right: -400px
+        @media (max-width: 500px)
+            top: 50px
+        @media (max-width: 470px)
+            top: 0
+            right: -500px
+        @media (max-width: 400px)
+            right: -550px
+            top: -80px
+
+#nosotros
+    background: $gray
+    margin-top: 35px
+    .container
+        @media (max-width: 500px)
+            padding: 0
+    .about-us-image
+        top: -70px
+        max-width: 100%
+        height: 450px
+        object-fit: cover
+    .container-about-us-info
+        .info-about
+            max-width: 400px
+    .container-about-us-image
+        @media (max-width: 700px)
+            position: absolute
+            left: -330px
+    .info-container
+        @media (max-width: 700px)
+            justify-content: end
+            .info-about
+                max-width: 400px
+                padding: 1.4rem 2rem
+                background: white
+                @media (max-width: 500px)
+                    max-width: 260px
+                @media (max-width: 400px)
+                    max-width: 215px
+    .space
+        @media (max-width: 700px)
+            display: none
+
+#contact
+    background: $gray
+    margin-top: 35px
+    .contact-image
+        right: 0
+        top: 0
+        max-width: 47.82%
+        height: 100%
+        object-fit: cover
+    input,
+    textarea
+        width: 100%
+        box-sizing: border-box
+        height: 40px
+        border-radius: 0
+        border: 0
+        border: 1px solid #eaeaea
+        font-family: 'Poppins'
+        padding: 0 1.4rem
+        font-size: 15px
+        margin-bottom: 1.4rem
+    textarea
+        height: 150px
+        padding: 1.4rem
+    button
+        margin: 0
+        padding: 0.7rem 2rem
+        font-family: 'Poppins'
+        background: $blue
+        color: white
+        font-weight: 500
+        border: 1px solid $blue
+        transition: 0.3s all
+        cursor: pointer
+        &:hover
+            transition: 0.3s all
+            background: #094c79
+
+.products-2
+    .row
+        @media (min-width: 1000px)
+            padding-left: 1.4rem
+            padding-right: 1.4rem
+        @media (max-width: 468px)
+            flex-direction: column-reverse
+
+.products-1
+    .row
+        @media (min-width: 1000px)
+            padding-left: 1.4rem
+            padding-right: 1.4rem
+
+#products
+    .info-products
+        @media (min-width: 468px)
+            margin-top: 50px
+    .info,
+    .info-2
+        h2
+            margin: 0
+            font-size: 1.3rem
+    ul
+        padding: 0
+        max-width: 400px
+        margin: 0 auto
+        border: 1px solid #eaeaea
+        @media (max-width: 468px)
+            border: 0px
+            border-bottom: 1px solid #eaeaea
+        li
+            position: relative
+            padding: 0.7rem 1.4rem
+            list-style: none
+            cursor: pointer
+            font-weight: 500
+            color: #5e5959
+            border-bottom: 1px solid #eaeaea
+            transition: 0.3s all
+            @media (max-width: 468px)
+                border: 0
+            &:hover
+                transition: 0.3s all
+                background: $blue
+                color: white
+                &::after
+                    filter: brightness(0%) invert(1)
+            &:last-child
+                border-bottom: 0
+            &::after
+                content: ""
+                top: 15px
+                background-image: url('assets/chevron.svg')
+                background-size: 16px 16px
+                width: 16px
+                position: absolute
+                right: 1.4rem
+                height: 16px
+                display: inline-block
+                margin-left: 5px
+            &.active // Aplicar estilos hover cuando la clase active está presente
+                background: $blue
+                color: white
+                &::after
+                    filter: brightness(0%) invert(1)
+        @media (max-width: 468px)
+            overflow: auto
+            white-space: nowrap
+            align-items: center
+            display: flex
+            li
+                &::after
+                    content: ""
+                    width: 0
+                    height: 0
+
+#beneficts
+    h4
+        text-align: center
+        margin-top: 2rem
+    img
+        display: flex
+        margin: 0 auto
+
+#whatsapp-contact
+    background-color: #2CD44F
+    position: fixed
+    bottom: 1.4rem
+    right: 1.4rem
+    cursor: pointer
+    width: 50px
+    height: 50px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50px
+    z-index: 2
+    transition: 0.3s all
+    img
+        width: 50%
+        height: auto
+        object-fit: contain
+        filter: brightness(0%) invert(1)
+    &:hover
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+        transition: 0.3s all
+
+.fixed
+    position: fixed
+    top: 0
+    width: 100%
+
+.sticky
+    position: sticky
+    top: 0
+    width: 100%
+
+footer
+    padding: 1.4rem
+    border-top: 2px solid #eaeaea
+    a
+        color: black
+        font-weight: 500
+    .container-nav-footer
+        @media (max-width: 721px)
+            display: flex
+            flex-direction: column
+            align-items: center
+            text-align: center
+            ul
+                li
+                    margin-right: 0
+                    padding-bottom: 0.5rem
+    .container-footer-links
+        @media (max-width: 721px)
+            justify-content: center
+            align-items: center
+    .container-footer
+        @media (max-width: 721px)
+            display: flex
+            justify-content: center
+            flex-direction: column
+            align-items: center
+    nav
+        ul
+            padding: 0
+            @media (min-width: 721px)
+                display: flex
+                justify-content: end
+            li
+                text-transform: uppercase
+                font-weight: 600
+                list-style: none
+                margin-right: 1.2rem
+                a
+                    color: black
+                    text-decoration: none
+                &:last-child
+                    margin-right: 0
+    .whats-app
+        text-decoration: none
+        @media (min-width: 721px)
+            display: flex
+            justify-content: end
+        @media (max-width: 721px)
+            display: flex
+            align-items: center
+            flex-direction: column
+
+.float-right
+    float: right !important
+
+.promotional-web-site
+    font-size: 12px
+    a
+        color: #000
+
+section
+    h3
+        color: #5a5a5a
+        max-width: 400px
+        margin: 0 auto
+        padding-bottom: 1.4rem
+        @media (max-width: 468px)
+            text-align: center !important
+    h1
+        &::after
+            content: ""
+            top: 15px
+            background-color: #197bbd
+            background-size: 16px 16px
+            width: 20px
+            position: relative
+            border-radius: 50px
+            height: 5px
+            display: inline-block
+            margin-left: 5px
+            display: flex
+            justify-content: center
+            align-items: center
+            margin: 0 auto
+    .left-decoration
+        &::after
+            margin: unset

@@ -1,0 +1,8 @@
+# Omite los directorios y archivos generados por npm
+node_modules/
+npm-debug.log
+package-lock.json
+
+# Omite los archivos generados por Sass
+.sass-cache/
+*.css.map

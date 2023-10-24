@@ -1,0 +1,351 @@
+.position-relative
+    position: relative !important
+
+.position-absolute
+    position: absolute !important
+
+.container
+    @media (max-width: 1366px)
+        padding: 0 1.4rem
+
+.container-grid
+    @media (max-width: 1200px)
+        padding: 0 1.4rem
+
+.container-grid
+    max-width: 1200px
+
+.medium-container
+    @media (max-width: 1366px)
+        padding: 0 1.4rem
+        box-sizing: border-box
+
+.large-container
+    @media (max-width: 1000px)
+        padding: 0 1.4rem
+        box-sizing: border-box
+
+.small-container
+    @media (max-width: 1366px)
+        padding: 0 1.4rem
+        box-sizing: border-box
+
+.m-0
+    margin: 0 !important
+
+.width-fit-content
+    width: fit-content !important
+
+.fit-content
+    width: fit-content !important
+
+.height-fit-content
+    height: fit-content !important
+
+.container
+    max-width: 1366px
+
+.large-container
+    max-width: 1200px
+
+.medium-container
+    max-width: 800px
+
+body
+    margin: 0
+    width: 100%
+    font-size: 1rem
+    line-height: 1.5rem
+
+.bold
+    font-weight: bold !important
+
+.cursor-pointer
+    cursor: pointer !important
+
+.box-sizing-border-box
+    box-sizing: border-box !important
+
+.row
+    display: flex
+    flex-wrap: wrap
+
+.text-uppercase
+    text-transform: uppercase !important
+
+.text-center
+    text-align: center !important
+
+.d-flex
+    display: flex
+
+.flex-direction-column
+    flex-direction: column !important
+
+.justify-content-center
+    justify-content: center
+
+.justify-content-start
+    justify-content: start
+
+.justify-content-end
+    justify-content: end
+
+.align-items-center
+    align-items: center
+
+.align-items-end
+    align-items: end
+
+.m-auto
+    margin: 0 auto !important
+
+.d-block
+    display: block !important
+
+.object-fit-contain
+    object-fit: contain
+
+.overflow-hidden
+    overflow: hidden !important
+
+.object-fit-cover
+    object-fit: cover
+
+$columns: 100
+
+@for $i from 1 through $columns
+    .col-#{$i}
+        width: calc((100% / #{$columns}) * #{$i})
+        box-sizing: border-box
+        position: relative
+
+@for $i from 1 through $columns
+    .col-tablet-#{$i}
+        @media (max-width: 1100px)
+            width: calc((100% / #{$columns}) * #{$i})
+            box-sizing: border-box
+            position: relative
+
+@for $i from 1 through $columns
+    .col-phablet-#{$i}
+        @media (max-width: 700px)
+            width: calc((100% / #{$columns}) * #{$i})
+            box-sizing: border-box
+            position: relative
+
+@for $i from 1 through $columns
+    .col-phone-#{$i}
+        @media (max-width: 468px)
+            width: calc((100% / #{$columns}) * #{$i})
+            box-sizing: border-box
+            position: relative
+
+@for $i from 1 through $columns
+    .col-desktop-#{$i}
+        @media (min-width: 1100px)
+            width: calc((100% / #{$columns}) * #{$i})
+            box-sizing: border-box
+            position: relative
+
+.flex-direction-column-phone
+    @media (max-width: 468px)
+        flex-direction: column !important
+
+.no-padding-horizontal
+    padding-left: 0 !important
+    padding-right: 0 !important
+
+.no-padding-horizontal-phablet
+    @media (max-width:700px)
+        padding-left: 0 !important
+        padding-right: 0 !important
+
+.no-padding-horizontal-phone
+    @media (max-width:468px)
+        padding-left: 0 !important
+        padding-right: 0 !important
+
+.padding-horizontal
+    padding-left: 1.4rem !important
+    padding-right: 1.4rem !important
+
+.padding-horizontal-phablet
+    @media (max-width:700px)
+        padding-left: 1.4rem !important
+        padding-right: 1.4rem !important
+
+.padding-horizontal-tablet
+    @media (max-width: 1099px) and (min-width: 700px)
+        padding-left: 1.4rem !important
+        padding-right: 1.4rem !important
+
+.padding-horizontal-phone
+    @media (max-width:468px)
+        padding-left: 1.4rem !important
+        padding-right: 1.4rem !important
+
+.margin-left-phone
+    @media (max-width:468px)
+        margin-left: 1.4rem !important
+
+.text-align-left
+    text-align: left
+
+.text-align-right
+    text-align: right
+
+.element-spacing
+    margin: 0.7rem
+    display: grid
+
+.large-spacing
+    margin: 1rem
+    display: grid
+
+.large-spacing-padding
+    padding: 1rem
+
+.medium-spacing
+    margin: 0.5rem
+    display: grid
+
+.small-spacing
+    margin: 0.25rem
+    display: grid
+
+.large-spacing-tablet
+    @media (max-width: 1099px) and (min-width: 700px)
+        margin: 1rem
+        display: grid
+
+.large-spacing-phablet
+    @media (max-width: 699px) and (min-width: 467px)
+        margin: 1rem
+        display: grid
+
+.large-spacing-desktop
+    @media (min-width: 1100px)
+        margin: 1rem
+        display: grid
+
+.large-spacing-phone
+    @media (max-width: 467px)
+        margin: 1rem
+        display: grid
+
+.medium-spacing-tablet
+    @media (max-width: 1099px) and (min-width: 700px)
+        margin: 0.5rem
+        display: grid
+
+.medium-spacing-phablet
+    @media (max-width: 699px) and (min-width: 467px)
+        margin: 0.5rem
+        display: grid
+
+.medium-spacing-desktop
+    @media (min-width: 1100px)
+        margin: 0.5rem
+        display: grid
+
+.medium-spacing-phone
+    @media (max-width: 467px)
+        margin: 0.5rem
+        display: grid
+
+.element-spacing-tablet
+    @media (max-width: 1099px) and (min-width: 700px)
+        margin: 0.7rem
+        display: grid
+
+.element-spacing-phablet
+    @media (max-width: 699px) and (min-width: 467px)
+        margin: 0.7rem
+        display: grid
+
+.element-spacing-desktop
+    @media (min-width: 1100px)
+        margin: 0.7rem
+        display: grid
+
+.element-spacing-phone
+    @media (max-width: 467px)
+        margin: 0.7rem
+        display: grid
+
+.small-spacing-tablet
+    @media (max-width: 1099px) and (min-width: 700px)
+        margin: 0.25rem
+        display: grid
+
+.small-spacing-phablet
+    @media (max-width: 699px) and (min-width: 467px)
+        margin: 0.25rem
+        display: grid
+
+.small-spacing-desktop
+    @media (min-width: 1100px)
+        margin: 0.25rem
+        display: grid
+
+.small-spacing-phone
+    @media (max-width: 467px)
+        margin: 0.25rem
+        display: grid
+
+.col
+    @media (min-width: 1100px)
+        flex: 1
+
+.col-tablet
+    @media (max-width: 1099px) and (min-width: 700px)
+        flex: 1
+
+.col-phablet
+    @media (max-width: 699px) and (min-width: 467px)
+        flex: 1
+
+.d-none
+    display: none !important
+
+.d-none-desktop
+    @media (min-width: 1100px)
+        display: none !important
+
+.d-none-tablet
+    @media (max-width: 1099px)
+        display: none !important
+
+.d-none-phablet
+    @media (max-width: 1099px) and (min-width: 768px)
+        display: none !important
+
+.d-none-phone
+    @media (max-width: 467px)
+        display: none !important
+
+.section-no-full-responsive
+    padding-left: 1.4rem
+    padding-right: 1.4rem
+    @media (min-width: 1366px)
+        padding-left: 0
+
+.w-100
+    width: 100% !important
+
+.w-100-phone
+    @media (max-width: 467px)
+        width: 100% !important
+
+.h-100
+    height: 100% !important
+
+.flex-direction-column-reverse
+    flex-direction: column-reverse !important
+
+picture
+    display: grid
+
+.grecaptcha-badge
+    display: none !important
