@@ -112,3 +112,22 @@ ScrollReveal().reveal('#nosotros');
 ScrollReveal().reveal('#products');
 ScrollReveal().reveal('#beneficts');
 ScrollReveal().reveal('#contact');
+
+
+
+function validateForm() {
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var comments = document.getElementById('comments').value;
+
+    if (name.trim() === '' || email.trim() === '' || comments.trim() === '') {
+        alert('Por favor, complete todos los campos.');
+        return false;
+    }
+
+    // Si llegamos aquí, todos los campos están llenos. Agregamos la clase d-none al botón.
+    document.getElementById('submitButton').classList.add('d-none');
+    document.getElementsByClassName('loader').classList.remove('d-none');
+
+    return true; // Permite el envío del formulario.
+}

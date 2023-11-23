@@ -449,6 +449,7 @@
           <form
             action="https://formsubmit.co/monserrat.sanchez@etti.com.mx"
             method="POST"
+            onsubmit="validateForm()"
           >
             <input type="text" name="name" placeholder="Nombre" />
             <input type="email" name="email" placeholder="Correo electrónico" />
@@ -458,7 +459,12 @@
               cols="30"
               rows="10"
             ></textarea>
-            <button type="submit">Enviar</button>
+            <img
+              class="loader d-none"
+              src="assets/loader.gif"
+              alt="loader icon"
+            />
+            <button type="submit" id="submitButton">Enviar</button>
           </form>
         </div>
         <div class="large-spacing"></div>
