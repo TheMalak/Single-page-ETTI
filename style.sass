@@ -72,24 +72,31 @@ header
             position: absolute
             top: 0
             z-index: 1
-            width: 80%
-            right: -148px
+            top: 45px
+            z-index: 1
+            width: 1000px
+            right: -655px
         @media (max-width: 752px)
             height: 500px
-            width: 700px
-            right: -300px
+            width: 1500px
+            right: -1250px
+            top: -30px
         @media (max-width: 600px)
             height: 300px
-            width: 700px
-            right: -400px
+            width: 1200px
+            right: -1000px
+            top: 50px
         @media (max-width: 500px)
             top: 50px
         @media (max-width: 470px)
-            top: 0
-            right: -500px
+            height: 300px
+            width: 1200px
+            right: -1130px
+            top: 0px
         @media (max-width: 400px)
-            right: -550px
-            top: -80px
+            top: 10px
+            right: -940px
+            width: 1000px
 
 #nosotros
     background: $gray
@@ -367,3 +374,33 @@ section
     .left-decoration
         &::after
             margin: unset
+
+#contact-area
+    display: flex
+    align-items: center
+    flex-direction: column
+    .container-image
+        width: 30px
+        height: 30px
+        background: $blue
+        border-radius: 10rem
+        display: flex
+        align-items: center
+        justify-content: center
+        img
+            width: 50% !important
+            height: auto
+            filter: brightness(0%) invert(1) !important
+    h2
+        margin: 0
+        margin-bottom: 0.3rem
+        font-size: 1.2rem
+    a
+        margin: 0
+        font-size: 0.9rem
+        text-decoration: none
+        color: $blue
+        cursor: pointer
+        font-weight: 600
+        &:hover
+            color: $blue

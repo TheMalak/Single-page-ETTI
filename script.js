@@ -110,7 +110,7 @@ $(document).ready(function () {
 ScrollReveal().reveal('#introduction');
 ScrollReveal().reveal('#nosotros');
 ScrollReveal().reveal('#products');
-ScrollReveal().reveal('#beneficts');
+// ScrollReveal().reveal('#beneficts');
 ScrollReveal().reveal('#contact');
 
 
